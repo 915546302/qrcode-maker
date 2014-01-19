@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Qrcode</title>
+    <style>
+      body {
+        width: 250px;
+        
+      }
+      h3{
+        height: 20px;
+      }
+      form{
+        margin-left: 3px;
+      }
+      #title{
+        color: green;
+        margin: 25px;
+        margin-top: -5px;
+        margin-bottom: -10px;
+      }
+      #imgsrc{
+        margin: auto;
+        margin-left: 50px;
+      }
+      #ground{
+        border: 2px solid #555555;
+      }
+    </style>
+    <script type="text/javascript" src="qrcode.js"></script>
+    <script src="maker.js"></script>
+  </head>
+  <body>
+  <div id="ground">
+      <div id="title"></div>
+      <div id="divform">
+        <form>
+          <input id="divinput">
+          <input id="makebutton" type="button" value="make" >
+        </form>
+      </div>  
+      <div id="divimage"></div>
+    </div>
+  </body>
+</html>
+
