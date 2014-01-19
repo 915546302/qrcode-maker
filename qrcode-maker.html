@@ -6,7 +6,7 @@
     <style>
       body {
         width: 250px;
-        
+        background-color: #d3d3d3;
       }
       h3{
         height: 20px;
@@ -20,12 +20,14 @@
         margin-top: -5px;
         margin-bottom: -10px;
       }
-      #imgsrc{
-        margin: auto;
-        margin-left: 50px;
-      }
       #ground{
         border: 2px solid #555555;
+        background-color: #ededed;
+      }
+      #divimage{
+        margin: 10px;
+        margin-bottom: 10px;
+        margin-left: 35px;
       }
     </style>
     <script type="text/javascript" src="qrcode.js"></script>
@@ -37,10 +39,12 @@
       <div id="divform">
         <form>
           <input id="divinput">
-          <input id="makebutton" type="button" value="make" >
+          <input id="makebutton" type="button" value="make" onclick="qrcode_make()">
         </form>
       </div>  
-      <div id="divimage"></div>
+      <div id="divimage">
+        <div id="qrcode"></div>
+      </div>
     </div>
   </body>
 </html>
