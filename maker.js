@@ -22,7 +22,7 @@ var Generator = {
     chrome.tabs.getSelected(null,function(tab){
         var title=document.getElementById("title");
         var h3=document.createElement("h3");
-        h3.innerHTML="二维码maker";
+        h3.innerHTML="二维码Maker";
         title.appendChild(h3);
 
         var inputtext=document.getElementById("divinput");   
